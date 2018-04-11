@@ -1,0 +1,329 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.wrapper {
+        display: flex;
+}
+
+#sidebar {
+        min-width: 250px;
+        max-width: 250px;
+        height: 100vh;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+
+/* Remove the button look in a drop-down menu. */
+/* The button will show up like plain text. */
+.dropdown-menu button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+/* Toolbar border */
+.navy-blue-border-bottom-small {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+
+
+th {
+    background-color: #000080;
+    color: white;
+}
+
+.navy-blue-border {
+	border-style: solid;
+    border-width: 5px;
+    border-color: #000080; 
+    border-radius: 5px;
+}
+
+.navy-blue-border-small {
+	border-style: solid;
+    border-width: 3px;
+    border-color: #000080; 
+    border-radius: 5px;
+}
+
+.navbar-custom {
+    background-color: white;
+    border-color: #000080;
+    position: absolute;
+    width: 100%;
+}
+/* Title */
+.navbar-custom .navbar-brand {
+    color: #777;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* Link */
+.navbar-custom .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #00aff0;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* Mobile version */
+.navbar-custom .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+
+@media (max-width: 767px) {
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #333;
+    }
+}
+
+.navbar {
+	background:none;
+	border:none;
+	border-radius:0;
+	margin-bottom:0; 
+	min-height:0px;
+}
+.navigationPillBar {
+	margin-top:2px;
+	padding:0;
+}
+
+nav.contain {
+	padding:0;
+}
+
+ul.nav.nav-pills.nav-justified ul{
+	border-radius:0;
+}
+
+.dropdown-menu {
+	min-width: 210px;
+}
+
+.dropdown-menu>li>a {
+	padding:3px 0px !important;
+	margin-bottom:5px;
+}
+
+ul.nav.nav-pills.nav-justified ul.dropdown-menu li {
+	border-bottom:1px solid #d8d8d8;
+	margin:2px 15px;
+}
+
+ul.nav.nav-pills.nav-justified ul.dropdown-menu li.lastdrop {
+	border-bottom:0;
+}
+	
+ul.nav.nav-pills.nav-justified li a p {
+	color:#000;
+	font-size:1.35em;
+	margin:0;
+}
+
+ul.nav.nav-pills.nav-justified ul.dropdown-menu li a p:hover {
+	color:#ab1000 !important;
+}
+
+.nav-pills>li>a {
+	border-radius:0 !important;	
+}
+
+ul.nav.nav-pills.nav-justified ul.dropdown-menu li a p.dropdescription {
+	color:#ab1000;
+	font-size:1em !important;
+	margin:0;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background:#00aff0 !important;
+    text-shadow:none;
+	border-radius:0 !important;
+}
+
+
+
+ul.nav.nav-pills {
+	background: #000; 
+}
+
+ul.nav.nav-pills li {
+	color:#fff;
+	border-right:1px solid #fff;
+}
+
+ul.nav.nav-pills li.lastItem {
+	color:#fff;
+	border-right:none;
+}
+
+ul.nav.nav-pills li a {
+	color:#fff;
+	outline:none;
+}
+
+ul.nav.nav-pills li a:hover {
+	color:#fff;
+	border-radius:0;
+	outline:none;
+	background:#00aff0;
+}
+
+ul.nav.nav-pills li a.active, ul.nav.nav-pills li a.active:hover {
+	background:#00aff0 !important;
+	border-radius:0;
+	cursor:default;
+}
+
+ul.nav.nav-pills li a.active:hover, ul.nav.nav-pills li a.active:active {
+	background:#000;
+	color:#fff;
+	pointer:default;
+}
+
+
+ul.nav.nav-pills li a:hover {
+	color:#fff;
+	border-radius:0;
+	outline:none;
+	background:#153867;
+}
+
+ul.nav.nav-pills li.dropdown ul.dropdown-menu li a {
+	color:#000;
+	outline:none;
+}
+
+ul.nav.nav-pills li.dropdown ul.dropdown-menu li a.active:hover, ul.nav.nav-pills li.dropdown ul.dropdown-menu li a.active:active {
+	background:#fff;
+	color:#000;
+	pointer:default;
+}
+
+ul.nav.nav-pills li.dropdown ul.dropdown-menu li a:hover {
+	color:#153867;
+	border-radius:0;
+	outline:none;
+	background:#c9effd;
+}
+
+ul.nav.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #00aff0;
+}
+
+.chris {
+		color: blue;
+		 background-color: #00aff0;
+}
+
+
+
